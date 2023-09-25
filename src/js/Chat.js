@@ -163,7 +163,7 @@ export default class Chat {
   }
 
   messaging() {
-    const ws = new WebSocket('ws://chat-backend-y9g8.onrender.com/ws');
+    const ws = new WebSocket('wss://chat-backend-y9g8.onrender.com/ws');
 
     const chatMessage = document.querySelector('.chat-message');
     const chatSend = document.querySelector('.chat-send');
