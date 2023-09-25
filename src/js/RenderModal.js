@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable no-console */
 import Chat from './Chat';
 import Tooltip from './Tooltip';
@@ -87,7 +88,7 @@ export default class RenderModal {
 
         const chat = new Chat(this.container, nickname);
 
-        request = fetch('https://chat-backend-u4lp.onrender.com/subscriptions/', {
+        request = fetch('https://chat-backend-y9g8.onrender.com/subscriptions/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

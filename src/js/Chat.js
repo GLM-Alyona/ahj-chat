@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable no-console */
 import getCreationDate from './getCreationDate';
 
@@ -27,7 +28,7 @@ export default class Chat {
       window.onbeforeunload = async () => {
         const query = `subscriptions/${encodeURIComponent(this.activeUser)}`;
 
-        fetch(`https://chat-backend-u4lp.onrender.com/${query}`, {
+        fetch(`https://chat-backend-y9g8.onrender.com/${query}`, {
           method: 'DELETE',
           headers: {
             'Content-Type': 'application/json',
@@ -78,7 +79,7 @@ export default class Chat {
 
     this.messaging();
 
-    const request = fetch('https://chat-backend-u4lp.onrender.com', {
+    const request = fetch('https://chat-backend-y9g8.onrender.com', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -131,7 +132,7 @@ export default class Chat {
   }
 
   gettingUsers() {
-    const eventSource = new EventSource('https://chat-backend-u4lp.onrender.com/sse');
+    const eventSource = new EventSource('https://chat-backend-y9g8.onrender.com/sse');
 
     eventSource.addEventListener('open', (e) => {
       console.log(e);
@@ -162,7 +163,7 @@ export default class Chat {
   }
 
   messaging() {
-    const ws = new WebSocket('wss://chat-backend-u4lp.onrender.com/ws');
+    const ws = new WebSocket('ws://chat-backend-y9g8.onrender.com/ws');
 
     const chatMessage = document.querySelector('.chat-message');
     const chatSend = document.querySelector('.chat-send');

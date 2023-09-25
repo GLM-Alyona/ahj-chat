@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 export default function getCreationDate() {
   const date = new Date();
   let dateHours = date.getHours();

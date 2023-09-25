@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 export default class Tooltip {
   constructor() {
     this._tooltips = [];
