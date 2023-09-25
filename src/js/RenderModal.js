@@ -54,7 +54,7 @@ export default class RenderModal {
       let request; let result; let
         json;
 
-      request = fetch('https://chat-backend-u4lp.onrender.com/index/', {
+      request = fetch('https://chat-backend-y9g8.onrender.com/index/', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
